@@ -10,6 +10,7 @@
 body{
     font-size: 30px;
 }
+/* This is pseudo class Start from here*/
         h1:hover{
             color: skyblue;
         }
@@ -20,10 +21,24 @@ body{
         a:visited{
             color: rgb(0, 73, 133);
         }
+       
       li:first-child{color: chocolate;}
       li:last-child{color: blue;}
       li:nth-child(2n){ color: rgb(12, 206, 77);  }
       li:nth-child(2n+1){background-color: gray;}
+      /* This is pseudo class End */
+
+      /* This is pseudo element Start from here*/
+    h3::before{
+    content: "Hello elemnt ";
+   }
+   .special::after{
+    content: " After E ";
+    background-color: aqua;
+    font-size: 25px;
+}
+
+      /* This is pseudo element End */
 
     </style>
 
@@ -38,12 +53,12 @@ body{
     <a href="https://aponco.com">Aponco te jaw</a>
     <a href="https://apon.co">Apon e jaw</a>
     <br>
-    <h3>midill size header -1</h3>
-    <h3>midill size header -2</h3>
-    <h3>midill size header -3</h3>
-    <h3>midill size header -4</h3>
-    <h3>midill size header -5</h3>
-    <h3>midill size header -6</h3>
+    <h3>Midill Size Header -1</h3>
+    <h3 class="special">Midill Size Header -2</h3>
+    <h3>Midill Size Header -3</h3>
+    <h3 class="special">Midill Size Header -4</h3>
+    <h3>Midill Size Header -5</h3>
+    <h3 class="special">Midill Size Header -6</h3>
     <ul>
         <li>Alia</li>
         <li>Jalia</li>
